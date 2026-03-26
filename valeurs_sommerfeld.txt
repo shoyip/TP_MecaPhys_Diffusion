@@ -1,0 +1,25 @@
+# Données
+h=h
+incertitude_h=0.01
+
+# distance entrée de la cuve-écran en m
+X = 17.6e-2  
+incertitude_X = 1e-3 
+
+# largeur de la cuve en m
+d = 2.03e-2     
+incertitude_d = 0.01e-2
+
+# indices optique du glycérol pur et de l'eau
+n_g = 1.473
+n_w = 1.333
+
+# concentration molaire du glycérol pur et du glycérol 25%
+c_g = 13.7e3         # mol/m³
+c_0 = c_g / 4
+incertitude_c_0 = 6e2  # incertitude sur c_0 (~10%)
+
+# Temps
+t_min = np.arange(5, 5*(len(h)+1), 5) 
+t_s = t_min * 60          # secondes
+t_h = t_s / 3600          # heures pour axe du haut
